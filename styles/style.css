@@ -1,0 +1,300 @@
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:Zelda;
+    src: url(../fonts/triforce.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    --main-text-color: #F7F7F7;
+    --secondary-text-color: #A4A4A4;
+}
+
+.clearfix:after {
+    content:"";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
+.header > .title-img {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../images/Zelda.jpg);
+    height: 100vh;
+    transition: background-size 0.5s;
+}
+
+.header > .title-img:hover{
+    background-size: 115% 115%;
+}
+
+.header > .title {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    font-size: 110px;
+    color: white;   
+    font-family: Zelda;
+    z-index: 1;
+    animation: titleAnimation 2s forwards;
+    animation-delay: 0.8s;
+    visibility: hidden;
+}
+
+.header > .title-cite {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: Gabriola;
+    opacity: 0;
+    animation: subtitleAnimation 3s forwards;
+    animation-delay: 1s;
+}
+
+.navbar {
+    background-color: var(--main-text-color);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar > .navbar-list {
+    list-style: none;
+    margin: 0;
+    float: right;
+    font-size: 0;
+}
+
+.navbar > .navbar-list > .navbar-item {
+    display: inline;
+    font-size: 16px;
+}
+
+.navbar > .navbar-list > .navbar-item a {
+    padding: 20px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    display: inline-block;
+    transition: all 0.5s linear;
+}
+
+.navbar > .navbar-list > .navbar-item.active a{
+    color: var(--main-text-color);
+    background-color: var(--secondary-text-color);
+}
+
+.navbar > .navbar-list > .navbar-item a:hover {
+    color: var(--main-text-color);
+    background-color: var(--secondary-text-color);
+}
+
+.section-container {
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+
+.section-reverse {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: var(--main-text-color);
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+
+.about-me > .zelda-video {
+    float: left;
+    max-width: 50%;
+}
+
+.about-me > .zelda-info {
+    float: right;
+    max-width: 50%;
+}
+
+.team-member-photo img {
+    height: 300px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.other-photo img {
+    height: 300px;
+    max-width: 100%
+}
+
+.heroes-photo img {
+    height: 555px;
+    max-width: 100%;
+}
+
+.rupee-photo img {
+    height: 35px;
+    max-width: 50%;
+}
+
+.bio {
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+
+.flip {
+    height: 305px;
+    position: relative;
+}
+
+.flip-img {
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: transform 1s;
+}
+
+.back {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+
+.flip:hover .front {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+
+.flip:hover .back {
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead > tr {
+    background-color: rgb(120, 167, 119);
+}
+
+th {
+    height: 50px;
+}
+
+th, td {
+    padding: 1px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+tbody > tr:hover {
+    background-color:#c0eec0;
+}
+
+#googleMap {
+    height: 400px;
+}
+
+.form {
+    padding: 0 20px;
+}
+
+.form .form-row {
+    padding: 10px;
+}
+
+input {
+    padding: 4px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+}
+
+button[disabled] {
+    opacity: 0.5;
+}
+
+input[type=button], input[type=submit], button {
+    background-color: rgb(175, 173, 76);
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.row-flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.company-img {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 10%;
+}
+
+.company-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.company-info {
+    /*align-self: flex-end;*/
+}
+
+.footer {
+    background-color: rgb(0, 0, 0);
+    color: var(--main-text-color);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes titleAnimation {
+    0% {
+        font-size: 200px;
+    }
+
+    50% {
+        font-size: 180px;
+    }
+
+    100% {
+        font-size: 100px;
+        visibility: visible;
+    }
+}
+
+@keyframes subtitleAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+

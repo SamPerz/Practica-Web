@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Legend of Zelda</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/grid.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+         <h1 class="title">Zelda</h1>
+         <div id="title-img-animated" class="title-img"></div>
+         <p class="title-cite">"Tener el valor de buscar la sabiduría que te otorgará poder"</p>
+    </header>
+
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item active">
+                <a href="#">Inicio</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#hyrule">Hyrule</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#sabios">Sabios</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#compañía">Compañía</a>
+            </li>
+            <li class="navbar-item">
+                <a href="mision.html">Misión</a>
+            </li>
+            <li class="navbar-item">
+                <a href="tasks.html">Tareas</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="hyrule" class="about-me clearfix section-container">
+            <div class="zelda-video">
+                <video id="video" width="350" height="250" controls>
+                    <source src="./video/zelda.mp4" type="video/mp4">
+                </video>
+
+            </div>
+            <div class="zelda-info">
+                <h2>Hyrule</h2>
+                <span class="zelda-description">
+                    Cuando el mal aparezca, una voz despertará del Reino Sagrado llamando a los destinados a ser sabios, habitantes de cinco templos: uno en un bosque, uno en una montaña, uno bajo un lago, uno dentro de la casa de los muertos y uno dentro de una diosa de la arena
+                </span>
+            </div>
+            <div>
+                <ul id="taskContainer">
+                    <figure class="heroes-photo">
+                        <img src="./images/Heroes.png" alt="Heroes">
+                    </figure>
+                </ul>
+            </div>
+        </section>
+
+        <section id="sabios" class="team section-reverse section-container">
+            <div class="row container">
+                <div class="col-4">
+                    <article class="team-member">
+                        <header>
+                            <h3>
+                                Rauru
+                            </h3>
+                            <h4 class="position">Sabio de la Luz</h4>
+                        </header>
+
+                        <figure class="team-member-photo">
+                                <div class="flip">
+                                    <div class="front flip-img">
+                                        <img src="./images/RauruV.jpg" alt="Rauru">
+                                    </div>
+                                    <div class="back flip-img">
+                                        <img src="./images/Rauru.jpg" alt="Rauru">
+                                    </div>
+                                </div>
+                            </figure>
+
+                        <p class="bio">
+                            "Yo soy Rauru, uno de los antiguos sabios.." - <cite>Ocarina of Time</cite>
+                        </p>
+
+                    </article>
+                </div>
+                <div class="col-4">
+                    <article class="team-member">
+                         <header>
+                            <h3>
+                                Saria
+                            </h3>
+                            <h4 class="position">Sabia del Bosque</h4>
+                        </header>
+
+                         <figure class="team-member-photo">
+                            <div class="flip">
+                                <div class="front flip-img">
+                                    <img src="./images/SariaV.jpg" alt="Saria">
+                                </div>
+                                <div class="back flip-img">
+                                    <img src="./images/Saria.jpg" alt="Saria">
+                                </div>
+                            </div>
+                        </figure>
+
+                        <p class="bio">
+                            "Está bien... Porque vamos a seguir siendo amigos por siempre, ¿verdad?” - <cite>Ocarina of Time</cite>
+                        </p>
+                    </article>
+                </div>
+                <div class="col-4">
+                    <article class="team-member">
+                         <header>
+                            <h3>
+                                Darunia
+                            </h3>
+                            <h4 class="position">Sabio del Fuego</h4>
+                        </header>
+
+                        <figure class="team-member-photo">
+                                <div class="flip">
+                                    <div class="front flip-img">
+                                        <img src="./images/DaruniaV.jpg" alt="Darunia">
+                                    </div>
+                                    <div class="back flip-img">
+                                        <img src="./images/Darunia.jpg" alt="Darunia">
+                                    </div>
+                                </div>
+                            </figure>
+
+                        <p class="bio">
+                            "¿Acaso Darunia, el gran jefe de los Goron, ha perdido tanto estatus como para ser tratado así?" - <cite>Ocarina of Time</cite>
+                        </p>
+                    </article>
+                </div>
+                <div class="col-4">
+                        <article class="team-member">
+                             <header>
+                                <h3>
+                                    Ruto
+                                </h3>
+                                <h4 class="position">Sabia del Agua</h4>
+                            </header>
+    
+                            <figure class="team-member-photo">
+                                    <div class="flip">
+                                        <div class="front flip-img">
+                                            <img src="./images/RutoV.jpg" alt="Ruto">
+                                        </div>
+                                        <div class="back flip-img">
+                                            <img src="./images/Ruto.jpg" alt="Ruto">
+                                        </div>
+                                    </div>
+                                </figure>
+    
+                            <p class="bio">
+                                "¡Soy yo, tu prometida, Ruto!... ¡La princesa de los Zora! ¡Aún recuerdo la promesa que nos hicimos hace siete años!" - <cite>Ocarina of Time</cite>
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-4">
+                            <article class="team-member">
+                                 <header>
+                                    <h3>
+                                        Impa
+                                    </h3>
+                                    <h4 class="position">Sabia de las Sombras</h4>
+                                </header>
+        
+                                <figure class="team-member-photo">
+                                        <div class="flip">
+                                            <div class="front flip-img">
+                                                <img src="./images/ImpaV.jpg" alt="Impa">
+                                            </div>
+                                            <div class="back flip-img">
+                                                <img src="./images/Impa.jpg" alt="Impa">
+                                            </div>
+                                        </div>
+                                    </figure>
+        
+                                <p class="bio">
+                                    "Soy Impa de los Sheikah. Soy la responsable de proteger a la Princesa Zelda" - <cite>Ocarina of Time</cite>
+                                </p>
+                            </article>
+                        </div>
+                        <div class="col-4">
+                                <article class="team-member">
+                                     <header>
+                                        <h3>
+                                            Nabooru
+                                        </h3>
+                                        <h4 class="position">Sabia del Espíritu</h4>
+                                    </header>
+            
+                                    <figure class="team-member-photo">
+                                            <div class="flip">
+                                                <div class="front flip-img">
+                                                    <img src="./images/NabooruV.jpg" alt="Nabooru">
+                                                </div>
+                                                <div class="back flip-img">
+                                                    <img src="./images/Nabooru.jpg" alt="Nabooru">
+                                                </div>
+                                            </div>
+                                        </figure>
+            
+                                    <p class="bio">
+                                        "En primer lugar, permíteme presentarme. Soy Nabooru del clan Gerudo.... Soy como un lobo solitario" - <cite>Ocarina of Time</cite>
+                                    </p>
+                                </article>
+                            </div>
+            </div>
+        </section>
+
+        <section id="compañía" class="company section-container">
+            <div class="row-flex">
+                <div class="company-item">
+                    <figure>
+                        <img class="company-img" src="./images/Epona.png" alt="Epona">
+                        <figcaption>
+                            Epona
+                        </figcaption>
+                    </figure>
+                    <p class="company-info">
+                        Yegua que acudirá siempre que sea llamada.
+                    </p>
+                </div>
+
+                <div class="company-item">
+                    <figure>
+                        <img class="other-img" src="./images/Navi.jpg" alt="Navi">
+                        <figcaption>
+                            Navi
+                        </figcaption>
+                    </figure>
+
+                    <p class="company-info">
+                        Hada azul, fiel compañera y guía durante la travesía.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+         Samuel Pérez &copy: 2017 bbaa
+    </footer>
+
+</body>
+
+</html>

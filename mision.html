@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mision</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/grid.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <a href="index.html">Inicio</a>
+            </li>
+            <li class="navbar-item">
+                <a href="index.html#hyrule">Hyrule</a>
+            </li>
+            <li class="navbar-item">
+                <a href="index.html#sabios">Sabios</a>
+            </li>
+            <li class="navbar-item">
+                <a href="index.html#transporte">Compañía</a>
+            </li>
+            <li class="navbar-item active">
+                <a href="mision.html">Misión</a>
+            </li>
+            <li class="navbar-item">
+                <a href="tasks.html">Tareas</a>
+            </li>
+            </ul>
+    </nav>
+
+    <main class="container">
+        <section class="mision section-container">
+            <h2>Contacta con nosotros</h2>
+            <div class="row">
+
+                <div class="col-6">
+                    <div>
+                        <ul id="taskContainer">
+                            <figure class="other-photo">
+                                <img src="./images/Postman.png" alt="Postman">
+                            </figure>
+                        </ul>
+                    </div>   
+                </div>
+
+                <div class="col-6">
+                    <div class="form">
+                        <form name="mision" method="get">
+                            <div class="form-row">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="name@company.com" 
+                                pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
+                                
+                            </div>
+                            <div class="form-row">
+                                <div>Tipo de misión</div>
+                                <label for="tipo_mision_1">Rescate</label>
+                                <input type="radio" id="tipo_mision_1" name="tipo_mision" value="Rescate" required>
+
+                                <label for="tipo_mision_2">Escoltar Convoy</label>
+                                <input type="radio" id="tipo_mision_2" name="tipo_mision" value="Ajuste de cuentas" required>
+
+                                <label for="tipo_mision_3">Banda Moblin</label>
+                                <input type="radio" id="tipo_mision_3" name="tipo_mision" value="Disparos y explosivos" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="ejercito">Número de Monstruos:</label>
+                                <input type="number" id="ejercito" name="ejercito" min="10" required>
+                            </div>
+                            <div class="form-row">
+                                    <label for="fecha">Fecha del trabajo:</label>
+                                    <input type="date" id="fecha" name="fecha" required>
+                            </div>
+                            <div class="form-row">
+                                    <button type="submit" id="enviar">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container">
+            <table>
+                <thead>
+                    <tr>
+                       <th>Tipo de servicio</th> 
+                       <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Consulta de misión</td>
+                        <td>
+                            <div>
+                                 <ul id="taskContainer">
+                                    <figure class="rupee-photo">
+                                         <img src="./images/Blue-Rupee.png" alt="Blue-Rupee">
+                                     </figure>
+                                 </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rescate</td>
+                        <td>
+                            <div>
+                                <ul id="taskContainer">
+                                   <figure class="rupee-photo">
+                                        <img src="./images/Red-Rupee.png" alt="Red-Rupee">
+                                    </figure>
+                                </ul>
+                           </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Escoltar Convoy</td>
+                        <td>
+                            <div>
+                                <ul id="taskContainer">
+                                   <figure class="rupee-photo">
+                                        <img src="./images/Gold-Rupee.png" alt="Gold-Rupee">
+                                    </figure>
+                                </ul>
+                           </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Salvar Hyrule</td>
+                        <td>
+                            <div>
+                                <ul id="taskContainer">
+                                   <figure class="rupee-photo">
+                                        <img src="./images/Purple-Rupee.png" alt="Purple-Rupee">
+                                    </figure>
+                                </ul>
+                           </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+</html>
